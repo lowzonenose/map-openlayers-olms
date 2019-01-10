@@ -12,6 +12,8 @@ var map = new Map({
   layers: [
     new VectorTileLayer({
       declutter: true,
+      opacity: 0.5,
+      visible: false,
       source: new VectorTileSource({
         attributions:
           '© <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> ' +
@@ -29,8 +31,7 @@ var map = new Map({
   target: "map",
   view: new View({
     center: [260000, 6251000],
-    zoom: 11,
-    opacity: 0.5
+    zoom: 11
   })
 });
 
