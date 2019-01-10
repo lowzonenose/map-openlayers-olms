@@ -1,11 +1,9 @@
-/*
 import Map from "ol/Map.js";
 import View from "ol/View.js";
 import MVT from "ol/format/MVT.js";
 import VectorTileLayer from "ol/layer/VectorTile.js";
 import VectorTileSource from "ol/source/VectorTile.js";
 import { Fill, Icon, Stroke, Style, Text } from "ol/style.js";
-
 
 var key =
   "pk.eyJ1IjoibG93em9uZW5vc2UiLCJhIjoiY2pqNW9pM3BnMDh3YzNxc3d1NDBrOXJiYiJ9.fpJA4mi3Dau4qgEHiqdbpw";
@@ -34,9 +32,10 @@ var map = new Map({
     zoom: 2
   })
 });
-*/
 
 import olms from "ol-mapbox-style/olms.js";
+/* import { apply } from "ol-mapbox-style"; */
+
 var mapStyle = {
   version: 8,
   name: "Qwant Style Basic",
@@ -127,7 +126,7 @@ var mapStyle = {
     "openmaptiles:version": "3.x"
   },
   center: [2.27896, 48.87001],
-  zoom: 14,
+  zoom: 11,
   bearing: 0,
   pitch: 0,
   sources: {
@@ -6393,4 +6392,5 @@ var mapStyle = {
   id: "cjbdftwmm936t2rquyt8ycvor",
   visibility: "private"
 };
-olms.apply("map", mapStyle);
+/* apply("map", mapStyle); */
+olms.apply(map, mapStyle);
