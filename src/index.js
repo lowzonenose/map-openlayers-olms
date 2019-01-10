@@ -28,13 +28,13 @@ var map = new Map({
   ],
   target: "map",
   view: new View({
-    center: [0, 0],
-    zoom: 2
+    center: [260000, 6251000],
+    zoom: 11,
+    opacity: 0.5
   })
 });
 
 import olms from "ol-mapbox-style/olms.js";
-/* import { apply } from "ol-mapbox-style"; */
 
 var mapStyle = {
   version: 8,
@@ -6392,5 +6392,5 @@ var mapStyle = {
   id: "cjbdftwmm936t2rquyt8ycvor",
   visibility: "private"
 };
-/* apply("map", mapStyle); */
+
 olms.apply(map, mapStyle);
